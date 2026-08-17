@@ -13,7 +13,7 @@
 }
 
 .Label {
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.25rem;
   font-weight: 500;
   color: var(--demo-neutral-fg);
@@ -32,12 +32,6 @@
   display: flex;
   align-items: center;
   height: 1.25rem;
-
-  &[data-orientation='vertical'] {
-    flex-direction: column;
-    height: 100%;
-    width: 1.25rem;
-  }
 }
 
 .Track {
@@ -64,9 +58,6 @@
 }
 
 .Thumb {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 1.25rem;
   height: 1.25rem;
   background: var(--demo-bg-thumb);
@@ -106,13 +97,6 @@
   display: flex;
   justify-content: space-between;
   margin-top: 0.5rem;
-
-  &[data-orientation='vertical'] {
-    flex-direction: column;
-    height: 100%;
-    margin-top: 0;
-    margin-inline-start: 0.5rem;
-  }
 }
 
 .Marker {
@@ -120,21 +104,4 @@
   font-size: 0.75rem;
   line-height: 1rem;
   color: var(--demo-neutral-emphasized);
-
-  &::before {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 0.25rem;
-    height: 0.25rem;
-    background: var(--demo-border);
-    border-radius: 9999px;
-    top: -0.625rem;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  &:is([data-state='under-value'], [data-state='at-value'])::before {
-    background: var(--demo-coral-solid);
-  }
 }
