@@ -17,6 +17,11 @@ function App() {
           <Slider.HiddenInput />
         </Slider.Thumb>
       </Slider.Control>
+      <Slider.MarkerGroup className={styles.MarkerGroup}>
+      <Slider.Marker className={styles.Marker} value={20}>
+        {20}
+      </Slider.Marker>
+      </Slider.MarkerGroup>
     </Slider.Root>
   )
 }

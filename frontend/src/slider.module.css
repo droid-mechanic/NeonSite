@@ -104,4 +104,21 @@
   font-size: 0.75rem;
   line-height: 1rem;
   color: var(--demo-neutral-emphasized);
+  
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0.25rem;
+    height: 0.25rem;
+    background: var(--demo-border);
+    border-radius: 9999px;
+    top: -0.625rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &:is([data-state='under-value'], [data-state='at-value'])::before {
+    background: var(--demo-coral-solid);
+  }
 }
