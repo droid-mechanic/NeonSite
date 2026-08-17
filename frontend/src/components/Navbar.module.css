@@ -1,0 +1,6 @@
+.Root {
+    color: var(--demo-neutral-fg);
+    display: flex;
+    width: 100%;
+    background-color: var(--demo-neutral-bg);
+}
