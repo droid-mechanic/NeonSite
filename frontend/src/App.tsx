@@ -4,7 +4,7 @@ import { Slider } from '@ark-ui/react/slider'
  
 function App() {
   return (
-      <Slider.Root className={styles.Root} defaultValue={[40]}>
+      <Slider.Root className={styles.Root} defaultValue={[40]} max={50}>
       <div style={{ display: 'flex', justifyContent: 'space-between' }}>
         <Slider.Label className={styles.Label}>Label</Slider.Label>
         <Slider.ValueText className={styles.ValueText} />
@@ -18,9 +18,12 @@ function App() {
         </Slider.Thumb>
       </Slider.Control>
       <Slider.MarkerGroup className={styles.MarkerGroup}>
-      <Slider.Marker className={styles.Marker} value={20}>
-        {20}
+        {[0, 10, 20, 45].map((value) => (
+          <Slider.Marker className={styles.Marker} value={value}>
+        {value}
       </Slider.Marker>
+        ))}
+      
       </Slider.MarkerGroup>
     </Slider.Root>
   )
