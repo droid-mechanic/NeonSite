@@ -1,0 +1,12 @@
+/* TEAM */
+Developer: Noah Orr                   
+Site: https://github.com/droid-mechanic/NeonSite
+Location: Mansfield OH USA	
+/* THANKS */
+https://humanstxt.org/
+https://deepwiki.com/chakra-ui/ark
+/* SITE */
+Last update: 08/17/2026 
+Standards: HTML, CSS  
+Components: React.js, ArkUI
+Software: VS Code
