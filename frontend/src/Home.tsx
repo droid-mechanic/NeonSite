@@ -1,5 +1,11 @@
+import ThreeDRose from "./components/ThreeDRose";
+
 function Home() {
-    return <h1>Hello world!</h1>;
+    return (
+        <div>
+            <ThreeDRose />
+        </div>
+    );
 }
 
 export default Home;
