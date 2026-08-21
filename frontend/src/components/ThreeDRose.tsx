@@ -39,6 +39,14 @@ function ThreeDScene() {
                 <RoseModel />
             </Bounds>
             <OrbitControls />
+            <Sparkles
+                count={50}
+                scale={1}
+                size={0.05}
+                speed={0.4}
+                color="#00FF22"
+                position={[0, 0.05, 0]}
+            />
             <EffectComposer>
                 <Bloom mipmapBlur luminanceThreshold={0.6} intensity={1.2} />
             </EffectComposer>
